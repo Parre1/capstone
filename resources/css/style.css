@@ -1,0 +1,180 @@
+/* Universal Styles */
+
+html {
+  font-family: calibri, sans-serif;
+  font-size: 16px;
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  border-bottom: solid 1px #c6c1c1;
+  background-color: white;
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+}
+
+.logo {
+  display: flex;
+  padding-left: 1.25rem;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 200;
+}
+
+.logo img{
+  height: auto;
+}
+
+.logo span{
+  font-weight: 600;
+}
+
+.logo p{
+  font-weight: 200;
+}
+
+header nav ul {
+  display: flex;
+  padding-right: 1.25rem;
+  align-items: center;
+}
+
+nav li {
+  padding-left: 1rem;
+}
+
+header .mobile {
+  display: none;
+}
+
+  /* Mid Section 1 Learn something today */
+
+  /* Main Content Container */
+
+  .container{
+    display: flex;
+    width: 100%;
+    height: 40rem;
+    background-color: #33cccc;
+  }
+
+  .column{
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Left column - left side */
+
+  .column.left{
+    width: 75%;
+    margin-top: 4rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .image-content{
+    width: 100%;
+    height: 32rem;
+  }
+
+  /* Right column */
+
+  .column.right{
+    width:50%;
+    margin: auto;
+    padding-top: 5rem;
+    padding-left: 2rem;
+  }
+
+  .text-content h2, p{
+    color: #004d4d;
+    font-weight: bold;
+  }
+
+  .text-content h2{
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .text-content p{
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .button{
+    background-color: #004d4d;
+    width: 16.5rem;
+    height: 2rem;
+    text-align: center;
+  }
+
+  .button p{
+    padding-top: 0.5rem;
+    color: white;
+    font-weight: 200;
+  }
+
+  /* Mobile version */
+
+  @media only screen and (max-width: 660px) {
+
+    /* Header */
+
+    header .logo {
+      display: none;
+    }
+
+    header .desktop {
+      display: none;
+    }
+
+    header .mobile {
+      display: block;
+      width: 100%;
+      height: 4rem;
+      margin: 0;
+      padding-top: 2rem;
+    }
+
+    header .mobile ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+    }
+
+    /* Mid section - 1 Learn something today */
+
+    .container{
+      display: inline-block;
+      width: 100%;
+      height: 40rem;
+      background-color: #33cccc;
+    }
+
+    .column.left{
+      width: 100%;
+      padding: 4rem 0 0 0;
+      margin:0;
+    }
+
+    .image-content{
+      width: 100%;
+      height: 20rem;
+    }
+
+    .column.right{
+      width:100%;
+      align-items: center;
+      margin: auto;
+      padding-top: 1rem;
+    }
+  }
